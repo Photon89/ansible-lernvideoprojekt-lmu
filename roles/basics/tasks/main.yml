@@ -1,0 +1,11 @@
+---
+- name: Install basic command line tools
+  package: name={{ item }} state=present
+  with_items:
+    - tree
+    - htop
+    - curl
+    - wget
+    - inotify-tools
+    - nmap
+    - ssh
