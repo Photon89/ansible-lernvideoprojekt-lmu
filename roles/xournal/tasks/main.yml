@@ -2,6 +2,14 @@
 - name: Install xournal
   apt: name=xournal state=present
 
+- name:  Make sure config paths exist
+  file:
+    path: {{ user.homedir }}/.xournal
+    owner: "{{ user.name }}"
+    group: "{{ user.group }}"
+    recurse: yes
+    state: directory
+
 - name: Configure xournal
   copy:
     src: config
