@@ -19,3 +19,8 @@
     - gstreamer1.0-plugins-bad
     - gstreamer1.0-plugins-ugly
     - libavcodec-extra
+
+- name: Install tools for video editing
+  apt: package={{ item }} state=present
+  with_items:
+    - ffmpeg
