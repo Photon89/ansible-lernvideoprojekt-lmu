@@ -5,7 +5,15 @@
 - name: Install multiload-ng
   apt: package=xfce4-multiload-ng-plugin state=present
 
-- name:  Configure multiload-ng
+- name:  Make sure config paths exist
+  file:
+    path: {{ user.homedir }}/.config/xfce4/panel/
+    owner: "{{ user.name }}"
+    group: "{{ user.group }}"
+    recurse: yes
+    state: directory
+
+- name: Configure multiload-ng
   copy:
     src: multiload-ng-xfce4-13.rc
     dest: "{{ user.homedir }}/.config/xfce4/panel/multiload-ng-xfce4-13.rc"
