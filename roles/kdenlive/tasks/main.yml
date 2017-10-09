@@ -1,5 +1,5 @@
 ---
-- name: Install xournal
+- name: Install kdenlive
   package: name={{ item }} state=present
   with_items:
     - kdenlive
