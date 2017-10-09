@@ -1,0 +1,10 @@
+- hosts: localhost
+  roles:
+    - { role: "simplescreenrecorder", tags: [simplescreenrecorder] }
+    - { role: "xournal", tags: [ xournal ] }
+  vars:
+    user:
+      name: pi
+      group: pi
+      realname: pi
+      homedir: /home/pi
