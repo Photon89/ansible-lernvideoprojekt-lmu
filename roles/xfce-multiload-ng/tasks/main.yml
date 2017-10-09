@@ -7,7 +7,7 @@
 
 - name:  Make sure config paths exist
   file:
-    path: {{ user.homedir }}/.config/xfce4/panel/
+    path: "{{ user.homedir }}/.config/xfce4/panel/"
     owner: "{{ user.name }}"
     group: "{{ user.group }}"
     recurse: yes

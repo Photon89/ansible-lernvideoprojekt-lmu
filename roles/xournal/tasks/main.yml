@@ -4,7 +4,7 @@
 
 - name:  Make sure config paths exist
   file:
-    path: {{ user.homedir }}/.xournal
+    path: "{{ user.homedir }}/.xournal"
     owner: "{{ user.name }}"
     group: "{{ user.group }}"
     recurse: yes
