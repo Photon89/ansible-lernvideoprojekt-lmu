@@ -5,7 +5,6 @@
     - { role: "xfce-basic" }
     - { role: "xfce-multiload-ng" }
   vars:
-    
     user:
       name: e
       group: e
