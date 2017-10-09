@@ -1,0 +1,6 @@
+---
+- name: Install xournal
+  package: name={{ item }} state=present
+  with_items:
+    - kdenlive
+    - frei0r-plugins

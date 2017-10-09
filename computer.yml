@@ -5,6 +5,7 @@
     - { role: "basics", tags: [ basics ] }
     - { role: "xfce-basic" }
     - { role: "xfce-multiload-ng" }
+    - { role: "kdenlive", tags: [ kdenlive ] }
   vars:
     user:
       name: e
