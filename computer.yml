@@ -3,7 +3,7 @@
     - { role: "simplescreenrecorder", tags: [simplescreenrecorder] }
     - { role: "xournal", tags: [ xournal ] }
     - { role: "xfce-basic" }
-    - { role: "xfce-multiload" }
+    - { role: "xfce-multiload-ng" }
   vars:
     
     user:
