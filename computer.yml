@@ -2,8 +2,16 @@
   roles:
     - { role: "simplescreenrecorder", tags: [simplescreenrecorder] }
     - { role: "xournal", tags: [ xournal ] }
+    - { role: "xfce-basic" }
+    - { role: "xfce-multiload" }
   vars:
+    
     user:
+      name: e
+      group: e
+      realname: e
+      homedir: /home/e
+    admin:
       name: pi
       group: pi
       realname: pi
