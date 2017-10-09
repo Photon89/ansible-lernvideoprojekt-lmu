@@ -1,0 +1,7 @@
+---
+- name:  Configure basic Xfce user settings
+  copy:
+    src: xfce4
+    dest: "{{ user.homedir }}/.config/xfce4"
+    owner: "{{ user.name }}"
+    group: "{{ user.group }}"
